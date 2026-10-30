@@ -27,9 +27,10 @@ React + TypeScript + Vite + Tailwind CSS + Zustand + Motion + Lucide。SVG 使�
 自訂戰術儲存於 localStorage 的 nba-tactics，僅限同一瀏覽器。支援拖曳、動作、步驟增刪上移、預覽、複製、刪除、JSON 匯出入與 Undo/Redo。
 
 ## GitHub Pages
-將此資料夾作為獨立 repository 根目錄推送到 main。在 Settings → Pages 選擇 GitHub Actions，工作流程會安裝、測試、建置並部署。Vite `base: './'` 支援 GitHub Pages 子路徑。尚未建立遠端 repository 或實際部署。
+將此資料夾作為獨立 repository 根目錄推送到 main。在 Settings → Pages 選擇 GitHub Actions，工作流程會安裝、測試、建置並部署。Vite `base: './'` 支援 GitHub Pages 子路徑。已部署：[線上網站](https://jimmy980821-ops.github.io/nba-tactics-lab/) · [GitHub 儲存庫](https://github.com/jimmy980821-ops/nba-tactics-lab)。
 
 ## 實作範圍與限制
 MVP 動畫、控制、步驟同步已實作。其他進攻與防守都有可播放資料，但部分為基礎教學示意：防守尚未建立完整反應規則，各套戰術已有獨立優缺點及破解說明，仍需教練專業審閱。Horns 提供三分支；Pick and Roll 支援 Roll、Pop、Reject、Slip、後衛終結與外線分球。分支均為教學示意，未做完整攻防決策樹。球員使用 PG/SG/SF/PF/C，沒有實際球員名單。尚未完成曲線路線節點編輯與複雜掩護碰撞。比較使用相同絕對秒數同步。
 
 測試覆蓋 Chromium 主要流程與手機尺寸；iPhone Safari / Android Chrome 實機未驗證。此版本不應聲稱十個 Phase 全部完成。
+

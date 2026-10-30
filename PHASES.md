@@ -11,6 +11,7 @@
 | 7 | 拖曳位置、六種動作、步驟增刪與上移、儲存複製刪除、JSON、Undo/Redo | 儲存與錯誤匯入測試；尚無任意曲線路徑節點編輯 |
 | 8 | 雙球場、相同秒數同步、各自播放、重播、事件比較 | 雙球場操作通過；比較說明可再深化 |
 | 9 | 響應式桌面、平板、手機與 reduced-motion 入場效果 | 390px 無橫向溢出；Safari / Android 實機尚未測試 |
-| 10 | Vitest、Playwright、GitHub Pages Actions、README | 本機建置測試完成；未建立遠端 repository，未實際部署 |
+| 10 | Vitest、Playwright、GitHub Pages Actions、README | 本機建置測試完成；GitHub 雲端測試與建置通過，已部署至 GitHub Pages |
 
 環境沒有 npm，使用 pnpm 安裝與對應 Node CLI 驗證。Playwright 在 Windows 使用已安裝的 Chrome；CI 使用 Playwright Chromium。
+
