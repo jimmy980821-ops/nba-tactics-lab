@@ -1,0 +1,2 @@
+# Design
+Operate surface. User-pinned NBA analysis workstation: charcoal shell, restrained warm gold control accents, blue offense/red defense, proportioned wood court. Compact left library, dominant center court, synchronized right steps. The court is the central working artifact, not a decorative preview. Responsive stacked controls, explicit simulation labels. No external player imagery or fabricated performance metrics.

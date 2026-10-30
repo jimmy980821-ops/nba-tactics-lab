@@ -1,0 +1,8 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+scripts/
+tmp-fix.cjs
+tests/*.png
