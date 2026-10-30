@@ -34,3 +34,6 @@ MVP 動畫、控制、步驟同步已實作。其他進攻與防守都有可播�
 
 測試覆蓋 Chromium 主要流程與手機尺寸；iPhone Safari / Android Chrome 實機未驗證。此版本不應聲稱十個 Phase 全部完成。
 
+
+## Logo 素材
+`public/brand/logo.svg` 方形標誌、`logo-mark.svg` 透明金色圖案、`logo-horizontal.svg` 橫式字標。瀏覽器圖示為 `public/favicon.svg`。沿用網站既有金色戰術節點識別；圖案源自 Lucide Waypoints（ISC），授權見 `public/brand/LICENSE.txt`。
