@@ -1,17 +1,16 @@
-# Phase 進度與驗證
+# Phase 進度（2026-10-31 更新）
 
-| Phase | 已實作 | 驗證 / 尚待補齊 |
+| Phase | 目前實作 | 驗證與限制 |
 | --- | --- | --- |
-| 1 | React/Vite/TS/Tailwind、深色三欄、SVG 球場與十人 | TypeScript、正式建置、桌面手機截圖通過 |
-| 2 | 獨立 sample 引擎、共用時間源、線性與 ease-in-out、持球與傳球 | 插值、Seek、球權、資料驗證單元測試 |
-| 3 | 播放暫停、步驟跳轉、重設、五種速度與時間軸 | Playwright 主要流程通過 |
-| 4 | 12 種進攻實際動畫，PNR 六種選擇、Horns 三分支 | 資料與分支驗證；動畫為教學示意，尚需戰術專業審閱 |
-| 5 | 10 種防守陣形與隨球輪轉 | 每套基本動畫可播放；尚非通用防守規則引擎 |
-| 6 | 六隊風格、進攻、防守與代表動畫入口 | 已實作；無真實球員陣容與賽事重建 |
-| 7 | 拖曳位置、六種動作、步驟增刪與上移、儲存複製刪除、JSON、Undo/Redo | 儲存與錯誤匯入測試；尚無任意曲線路徑節點編輯 |
-| 8 | 雙球場、相同秒數同步、各自播放、重播、事件比較 | 雙球場操作通過；比較說明可再深化 |
-| 9 | 響應式桌面、平板、手機與 reduced-motion 入場效果 | 390px 無橫向溢出；Safari / Android 實機尚未測試 |
-| 10 | Vitest、Playwright、GitHub Pages Actions、README | 本機建置測試完成；GitHub 雲端測試與建置通過，已部署至 GitHub Pages |
+| 1 | React/TS/Vite/Tailwind、三欄工作區、SVG NBA 比例球場、面板收合 | 兩種材質、半全場、斜角與縮放；標線已重新核對 |
+| 2 | Scene v2、弧長曲線、轉向、獨立球事件、單一 RAF、舊資料相容 | 十人間距、路徑連續性、傳接球、非法資料單元測試 |
+| 3 | 專業時間軸、逐格、章節跳轉、任意 Seek、循環、速度與鏡頭 | 播放操作與暫停一致性通過瀏覽器測試 |
+| 4 | 12 種進攻仍保留；PnR 手工重編為六種選擇與四防守方案 | PnR 為進階示範，其餘 11 種進攻仍是基礎教學資料 |
+| 5 | 原 10 種防守保留；PnR 新增 Drop/Switch/Hedge/Blitz | 預先編排教學劇本，非通用防守 AI 或碰撞物理 |
+| 6 | 六隊風格與動畫入口保留 | 不代表真實陣容或逐回合重建 |
+| 7 | 原拖曳／動作／步驟／存讀／JSON／Undo/Redo 保留 | 修正鏡頭逆座標；進階 Scene 複製為畫格後編輯，尚無曲線控制點編輯器 |
+| 8 | 同步與獨立雙球場保留 | 修正右側較長戰術的時間軸，SVG ID 完全獨立 |
+| 9 | 桌面、390px 手機與 768px 平板 | 響應式及座標穩定測試通過；Safari/行動裝置實機尚未驗證 |
+| 10 | 單元、互動、正式產物 smoke、Pages CI/CD 與文件 | 詳見 docs/REFACTOR-REPORT.md |
 
-環境沒有 npm，使用 pnpm 安裝與對應 Node CLI 驗證。Playwright 在 Windows 使用已安裝的 Chrome；CI 使用 Playwright Chromium。
-
+完整稽核、實際改動與限制見 docs/REFACTOR-AUDIT.md 與 docs/REFACTOR-REPORT.md。
